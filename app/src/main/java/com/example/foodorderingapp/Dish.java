@@ -1,5 +1,6 @@
 package com.example.foodorderingapp;
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
 
 import com.thedeanda.lorem.Lorem;
@@ -54,4 +55,15 @@ public class Dish {
         this.description = description;
         this.priceInCents = (int)(Math.random() * (maxPriceInCents - minPriceInCents + 1) + minPriceInCents);
     }
+=======
+public class Dish {
+
+    // Public properties
+    public String name;
+    public String description;
+    public Integer priceInCents;
+    public String imageResourceName;
+
+
+>>>>>>> master
 }
