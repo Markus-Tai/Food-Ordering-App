@@ -13,7 +13,5 @@ public class MainActivity extends AppCompatActivity {
 
         Dish dishOne = new Dish("");
         System.out.println("Dish One: " + dishOne);
-
-
     }
 }
