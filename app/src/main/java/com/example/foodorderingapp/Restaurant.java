@@ -22,14 +22,15 @@ public class Restaurant {
         shortDesc = lorem.getWords(3, 7);
         streetAddress = randomStreetAddress();
         phoneNumber = lorem.getPhone();
+        imageResource = R.drawable.restaurant;
         // TODO add some images maybe
         // imageResource = R.drawable.restaurant;
 
     }
 
     private String randomStreetAddress() {
-        int min = 69;
-        int max = 42069;
+        int min = 100;
+        int max = 9999;
         int randomNumber = (int)(Math.random() * (max - min +1) + min);
         String randomStreetAddress = randomNumber + " " + lorem.getCity() + " " + "St.";
         return randomStreetAddress;
