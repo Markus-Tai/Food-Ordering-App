@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,13 +15,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Dish dishOne = new Dish("");
-<<<<<<< HEAD
+
         System.out.println("Dish One: "+dishOne);
 
-        Dish dish1 = new Dish();
+        Dish dishTwo = new Dish("");
+        System.out.println("Dish Two: " + dishTwo);
 
-=======
-        System.out.println("Dish One: " + dishOne);
->>>>>>> d7b028970c79b072b3923b97438d5cff57ee1637
+        Dish dishThree = dishOne;
+        System.out.println("Dish Three: " + dishThree);
+
+        System.out.println("dishOne == dishTwo" + dishOne.equals(dishTwo));
+        System.out.println("dishOne == dishThree" + dishOne.equals(dishThree));
+        System.out.println("dishTwo == dishThree" + dishOne.equals(dishThree));
+
+
+        Menu menu = new Menu();
+        HashMap<String, ArrayList<Dish>> dishesByCuisine= menu.dishesByCuisine();
     }
 }

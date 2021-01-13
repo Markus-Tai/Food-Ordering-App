@@ -13,9 +13,9 @@ public class Dish {
     public String imageSource;
 
     // private properties
-    private static Lorem lorem = LoremIspum.getInstance();
+    private static Lorem lorem = LoremIpsum.getInstance();
     private int maxPriceInCents = 1999;
-    private int minPriceInCents = 999;
+    private int minPriceInCents = 799;
 
     //constructor
     public Dish(String imageSource) {
@@ -41,22 +41,21 @@ public class Dish {
                 description.equals(dish.description) &&
                 imageSource.equals(dish.imageSource) &&
                 priceInCents == dish.priceInCents);
-    }
 
-    //private methods
-    private void populateProperties() {
-        //random self generating other properties...
-        String name = lorem.getTitle(1, 4);
-        String description = lorem.getParagraphs(2, 4);
-        //normally you wont populate it like this
-        //TODO maybe i can make random uber names lol that would be cool
-        // using lorem.getName(), country, etc
-        this.name = name;
-        this.description = description;
-        this.priceInCents = (int) (Math.random() * (maxPriceInCents - minPriceInCents + 1) + minPriceInCents);
     }
-<<<<<<< HEAD
+        //private methods
+        private void populateProperties() {
+            //random self generating other properties...
+            String name = lorem.getTitle(1, 4);
+            String description = lorem.getParagraphs(2, 4);
+            //normally you wont populate it like this
+            //TODO maybe i can make random uber names lol that would be cool
+            // using lorem.getName(), country, etc
+            this.name = name;
+            this.description = description;
+            this.priceInCents = (int) (Math.random() * (maxPriceInCents - minPriceInCents + 1) + minPriceInCents);
+        }
 
-=======
+
 }
->>>>>>> d7b028970c79b072b3923b97438d5cff57ee1637
+
