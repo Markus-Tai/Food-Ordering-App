@@ -11,12 +11,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< HEAD
         Dish dishOne = new Dish("");
         System.out.println("Dish One: "+dishOne);
-=======
+
         Dish dish1 = new Dish();
-        
->>>>>>> master
+
     }
 }
