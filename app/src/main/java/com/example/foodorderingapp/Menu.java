@@ -10,6 +10,15 @@ public class Menu {
         }
         return menu;
     }
+    //Singleton
+    public static Menu getInstance() {
+        if (sharedInstance == null) {
+            sharedInstance = new Menu();
+        }
+        return sharedInstance;
+    }
+    private static Menu sharedInstance = null;
+    private Menu() {}
 
     //"CuisineName" : { Dish }
     private HashMap<String,ArrayList<Dish>>menu=null;
@@ -21,14 +30,15 @@ public class Menu {
             ArrayList<Dish> dishesList = new ArrayList<Dish>();
 
             // Insert however many dishes for each cuisine
-            for (int i=0;i<6;i++) { // TODO instead of a 6, maybe we can grab another random number for this too..
-                Dish dish = new Dish("");
+            for (int i=0;i<6;i++) {
+                String imgSourceName = cuisine.name().toLowerCase()+ "0" + (i+1);
+                Dish dish = new Dish(imgSourceName);
                 dishesList.add(dish);
             }
 
             //Here, dishesList will have however many dishes added to it
             // Sp add it to the menu dictionary.
-            menu.put(cuisine.toString(),dishesList);
+            menu.put(cuisine.name(),dishesList);
         }
         System.out.println("Menu: "+menu); // LLLLLLL
     }
