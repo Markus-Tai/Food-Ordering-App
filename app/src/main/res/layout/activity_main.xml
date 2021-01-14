@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,11 +8,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+<<<<<<< HEAD
+=======
+
+        <fragment
+            android:name="com.example.foodorderingapp.RestaurantHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_restaurant_header"/>
+
+>>>>>>> 01
     </LinearLayout>
 
 </ScrollView>
