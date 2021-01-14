@@ -4,9 +4,17 @@ import com.thedeanda.lorem.Lorem;
 import com.thedeanda.lorem.LoremIpsum;
 
 public class Restaurant {
-    public Restaurant() {
-        setupProperties();
+
+    // Singleton
+    public static Restaurant getInstance() {
+        if (sharedInstance == null) {
+            sharedInstance = new Restaurant();
+        }
+        return sharedInstance;
     }
+    private static Restaurant sharedInstance = null;
+    private Restaurant() { setupProperties();}
+
     //public properties
     public String restaurantName;
     public String shortDesc;
@@ -16,7 +24,7 @@ public class Restaurant {
     public int imageResource;
 
     private Lorem lorem = LoremIpsum.getInstance();
-    //ptibate pamethoud
+    //private method
     private void setupProperties() {
         restaurantName = lorem.getTitle(1,2);
         shortDesc = lorem.getWords(3, 7);
