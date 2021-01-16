@@ -20,6 +20,9 @@ public class Menu {
     private static Menu sharedInstance = null;
     private Menu() {}
 
+    public Cuisine selectedDishCuisine;
+    public Integer selectedDishPosition;
+
     //"CuisineName" : { Dish }
     private HashMap<String,ArrayList<Dish>>menu=null;
     private void populateMenu() {

@@ -1,5 +1,7 @@
 <resources>
     <string name="Meal_Port">FoodOrderingApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="choose_one_or_more_items">You cant order nothing</string>
+    <string name="cannot_add_to_cart">Cant add to car</string>
+    <string name="ok">OK</string>
 </resources>

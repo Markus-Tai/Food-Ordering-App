@@ -80,16 +80,16 @@ public class CuisineListFragment extends Fragment {
         recyclerView.setAdapter(dishAdapter);
     }
 
-//    private void userTappedOnDishAtPosition(int position) {
-//        Menu.getInstance().selectedDishCuisine = cuisine;
-//        Menu.getInstance().selectedDishPosition = position;
-//
-//        Dish dish = Menu.getInstance().dishesByCuisine().get(cuisine.name()).get(position);
-//        System.out.println("User tapped on dish " + dish.name);
-//
-//        Intent intent = new Intent(getContext(), DishActivity.class);
-//        getActivity().startActivity(intent);
-//    }
+    private void userTappedOnDishAtPosition(int position) {
+        Menu.getInstance().selectedDishCuisine = cuisine;
+        Menu.getInstance().selectedDishPosition = position;
+
+        Dish dish = Menu.getInstance().dishesByCuisine().get(cuisine.name()).get(position);
+        System.out.println("User tapped on dish " + dish.name);
+
+        Intent intent = new Intent(getContext(), DishActivity.class);
+        getActivity().startActivity(intent);
+    }
 
     private class DishAdapter extends RecyclerView.Adapter<DishAdapter.DishViewHolder> {
 
@@ -135,14 +135,13 @@ public class CuisineListFragment extends Fragment {
             public View itemView;
             public ImageView imageView;
             public TextView nameTextView;
-//TODO: here, the commented lines of code...
 
             public DishViewHolder(@NonNull View itemView) {
                 super(itemView);
                 this.itemView = itemView;
-//                imageView = itemView.findViewById(R.id.image_restaurant);
-//              nameTextView = itemView.findViewById(R.id.text_cuisine_name);
-//            }
+                imageView = itemView.findViewById(R.id.dish_image);
+                nameTextView = itemView.findViewById(R.id.text_cuisine_name);
+            }
             }
         }
     }
