@@ -1,0 +1,112 @@
+[33mcommit b33b85e78385ee581a0aa38240fc70c7f10cff97[m[33m ([m[1;36mHEAD -> [m[1;32m01[m[33m)[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Sat Jan 16 19:37:49 2021 -0800
+
+    fixed error
+
+[33mcommit 9d2b0f26bba1b36916e6bd2a0c4d98832437febc[m[33m ([m[1;31morigin/01[m[33m)[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Wed Jan 13 19:59:58 2021 -0800
+
+    connected fragment to avtivity_main.xml
+
+[33mcommit 1284721cb1630ecc31ad40c0d3f962bb982a6cbd[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Tue Jan 12 21:17:49 2021 -0800
+
+    Added basic template for design
+
+[33mcommit 8b6caac23bf26564d08e87c7d13f09b2400bcc53[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Tue Jan 12 19:08:15 2021 -0800
+
+    Added images to drawable folder
+
+[33mcommit 5de3e9318e76446f3f1e6e94772767874c696036[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Tue Jan 12 18:50:27 2021 -0800
+
+    Added new things like hashmap to MainAcitivity
+
+[33mcommit 618ddff5099cf6336f37487a326c0e9bc0bec2e3[m
+Merge: 2bc2e6a d7b0289
+Author: MarkusT <markust0112@gmail.com>
+Date:   Tue Jan 12 17:59:41 2021 -0800
+
+    fixing errors
+
+[33mcommit 2bc2e6acc60a7668d5e88cf9ad652f51d73da336[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Tue Jan 12 17:59:11 2021 -0800
+
+    fixing errors
+
+[33mcommit d7b028970c79b072b3923b97438d5cff57ee1637[m
+Merge: 4f1dfae 43b1fd9
+Author: aki xuu <707.hoaki@gmail.com>
+Date:   Tue Jan 12 02:17:11 2021 +0000
+
+    Merged somebranch into master
+
+[33mcommit 43b1fd9192156b396acb33f13fdcfd866b696686[m
+Author: akixuu <akixuu@users.noreply.github.com>
+Date:   Mon Jan 11 18:15:27 2021 -0800
+
+    Added new classes
+
+[33mcommit 4f1dfae3786bccff23a497afadb1ee5c613f4fcf[m
+Merge: 9c68198 d34d727
+Author: aki xuu <707.hoaki@gmail.com>
+Date:   Mon Jan 11 04:55:38 2021 +0000
+
+    Merged somebranch into master
+
+[33mcommit d34d727fb561897e22e7c1fd0f8e6ec269a4593c[m
+Author: akixuu <akixuu@users.noreply.github.com>
+Date:   Sun Jan 10 20:50:54 2021 -0800
+
+    fixed bugs in class Dish
+
+[33mcommit 9c68198df76d8c0ecfcb09692093ae7d65854557[m
+Merge: f6a4334 cddbe4c
+Author: aki xuu <707.hoaki@gmail.com>
+Date:   Wed Dec 30 22:17:45 2020 +0000
+
+    Merged somebranch into master
+
+[33mcommit cddbe4cadcfe90f14a3a99b264f15081068dcc67[m
+Merge: de03241 f6a4334
+Author: akixuu <akixuu@users.noreply.github.com>
+Date:   Wed Dec 30 14:11:02 2020 -0800
+
+    Merge branch 'master' into somebranch
+
+[33mcommit f6a4334da67ea8ec804710ff10b9144550cbe00f[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Wed Dec 30 13:12:45 2020 -0800
+
+    fixing errors
+
+[33mcommit dd967a288fa45b923d168d06db6be2a0af9645e2[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Wed Dec 30 13:09:45 2020 -0800
+
+    added new classes
+
+[33mcommit de03241d49698509e669b13d4f8bd23325b4a2dc[m
+Author: akixuu <akixuu@users.noreply.github.com>
+Date:   Tue Dec 29 21:20:47 2020 -0800
+
+    Added new classes
+
+[33mcommit c94335942ad0d6c2f4bd7d1b74c6e1907213f229[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Tue Dec 15 19:06:25 2020 -0800
+
+    Adding vcs.xml and gradle.xml
+
+[33mcommit 0f3c64710f6d09bcec1fc0388fa7d2832df5829e[m
+Author: MarkusT <markust0112@gmail.com>
+Date:   Tue Dec 15 18:54:57 2020 -0800
+
+    Initial commit
