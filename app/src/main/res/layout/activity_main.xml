@@ -15,8 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-<<<<<<< HEAD
-=======
+
 
         <fragment
             android:name="com.example.foodorderingapp.RestaurantHeader"
@@ -24,7 +23,7 @@
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_restaurant_header"/>
 
->>>>>>> 01
+
     </LinearLayout>
 
 </ScrollView>
