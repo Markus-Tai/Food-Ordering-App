@@ -1,5 +1,4 @@
 <resources>
-    <string name="Meal_Port">FoodOrderingApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Meal Port</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
