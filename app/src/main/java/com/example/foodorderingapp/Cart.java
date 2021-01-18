@@ -50,7 +50,7 @@ public class Cart {
         else {
             // No matching dish found
             CartItem cartItem = new CartItem(dish, quantity);
-            cartItem.add(cartItem);
+            getCartItems().add(cartItem);
         }
     }
 
