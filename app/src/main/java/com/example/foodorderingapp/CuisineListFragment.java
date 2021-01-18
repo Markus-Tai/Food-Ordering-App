@@ -138,7 +138,7 @@ public class CuisineListFragment extends Fragment {
                 super(itemView);
                 this.itemView = itemView;
                 imageView = itemView.findViewById(R.id.dish_image);
-                nameTextView = itemView.findViewById(R.id.text_cuisine_name);
+                nameTextView = itemView.findViewById(R.id.text_name);
             }
             }
         }
