@@ -39,11 +39,11 @@ public class Cart {
         }
         else {
             CartItem cartItem = new CartItem(dish, quantity);
-<<<<<<< HEAD
+
             getCartItems().add(cartItem);
-=======
+
             cartItems.add(cartItem);
->>>>>>> e177711a5843bf7939251f77ad743567f1f85969
+
         }
     }
     public ArrayList<CartItem> getCartItems() {

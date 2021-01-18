@@ -23,6 +23,11 @@ public class CartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+        getSupportActionBar().setTitle("Cart");
+
+        setTotalAmountTextView();
+        setupCheckoutButton();
+        setupRecyclerView();
     }
 
     // XML views
@@ -69,6 +74,7 @@ public class CartActivity extends AppCompatActivity {
         CartAdapter cartAdapter = new CartAdapter(this, Cart.getInstance().getCartItems());
         recyclerView.setAdapter(cartAdapter);
     }
+
 
     // Adapter for Cart list
     private class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder> {
@@ -129,6 +135,7 @@ public class CartActivity extends AppCompatActivity {
         }
     }
 }
+
 
 
 
