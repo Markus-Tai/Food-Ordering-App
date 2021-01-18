@@ -19,9 +19,7 @@ import java.util.ArrayList;
 
 public class CuisineListFragment extends Fragment {
 
-    public CuisineListFragment() {
-        // Required empty public constructor
-    }
+    public CuisineListFragment() { }
 
     /**
      * @param cuisine The cuisine for this cuisine list fragment.
@@ -30,7 +28,7 @@ public class CuisineListFragment extends Fragment {
     public static CuisineListFragment newInstance(Cuisine cuisine) {
         CuisineListFragment fragment = new CuisineListFragment();
         Bundle args = new Bundle();
-        args.putString(CUISINE, cuisine.name());  // Pass name of cuisine (a String) as parameter into fragment
+        args.putString(CUISINE, cuisine.name());
         fragment.setArguments(args);
         return fragment;
     }
@@ -117,7 +115,7 @@ public class CuisineListFragment extends Fragment {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //userTappedOnDishAtPosition(position);
+                    userTappedOnDishAtPosition(position);
                 }
             });
         }
@@ -140,7 +138,7 @@ public class CuisineListFragment extends Fragment {
                 super(itemView);
                 this.itemView = itemView;
                 imageView = itemView.findViewById(R.id.dish_image);
-                nameTextView = itemView.findViewById(R.id.text_cuisine_name);
+                nameTextView = itemView.findViewById(R.id.text_name);
             }
             }
         }

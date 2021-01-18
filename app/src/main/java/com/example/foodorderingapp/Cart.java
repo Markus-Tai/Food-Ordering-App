@@ -3,7 +3,6 @@ package com.example.foodorderingapp;
 import java.util.ArrayList;
 
 public class Cart {
-    //singleton
     public static Cart getInstance() {
         if (sharedInstance == null) {
             sharedInstance = new Cart();
@@ -12,59 +11,48 @@ public class Cart {
     }
     private static Cart sharedInstance = null;
     private Cart() {}
-
-
-    //Public properties
     public Integer numberOfItems() {
-        Integer numberOfTimes = 0;
-        for (CartItem cartItem : cartItem) {
-            numberOfTimes += cartItem.getQuantity();
+        Integer numberOfItems = 0;
+        for (CartItem cartItem : cartItems) {
+            numberOfItems += cartItem.getQuantity();
         }
-        return numberOfTimes;
+        return numberOfItems;
     }
-
     public Integer totalPriceInCents() {
-        Integer totalPrice = 0;
-        for (CartItem cartItem : cartItem) {
-            totalPrice += cartItem.subtotalPriceInCents();
+        Integer totalPriceInCents = 0;
+        for (CartItem cartItem : cartItems) {
+            totalPriceInCents += cartItem.subtotalPriceInCents();
         }
-        return totalPrice;
+        return totalPriceInCents;
     }
-
     public void add(Dish dish, Integer quantity) {
         System.out.println("Adding " + quantity + " items of " + dish.name);
-
-        // Check if dish is already in cart
         CartItem foundCartItem = null;
-        for (CartItem cartItem : cartItem) {
+        for (CartItem cartItem : cartItems) {
             if (cartItem.dish.equals(dish)) {
                 foundCartItem = cartItem;
                 break;
             }
         }
-
         if (foundCartItem != null) {
-            // Found matching dish
             foundCartItem.quantity += quantity;
         }
         else {
-            // No matching dish found
             CartItem cartItem = new CartItem(dish, quantity);
+<<<<<<< HEAD
             getCartItems().add(cartItem);
+=======
+            cartItems.add(cartItem);
+>>>>>>> e177711a5843bf7939251f77ad743567f1f85969
         }
     }
-
     public ArrayList<CartItem> getCartItems() {
-        return cartItem;
+        return cartItems;
     }
-
     public void clear() {
-        cartItem = new ArrayList<>();
+        cartItems = new ArrayList<>();
     }
-    //Private properties
-    private ArrayList<CartItem> cartItem = new ArrayList<>();
-
-    //nested class
+    private ArrayList<CartItem> cartItems = new ArrayList<>();
     public class CartItem {
 
         // Public methods
@@ -84,7 +72,7 @@ public class Cart {
             return quantity * itemPriceInCents();
         }
 
-
+        // Constructor
         public CartItem(Dish dish, Integer quantity) {
             this.dish = dish;
             this.quantity = quantity;
@@ -93,7 +81,8 @@ public class Cart {
         // Private properties
         private Dish dish;
         private Integer quantity;
-
     }
-
 }
+
+
+
